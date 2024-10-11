@@ -302,18 +302,3 @@ if __name__ == "__main__":
             else:
                 speak("I didn't catch that. Please try again.")
 
-        elif 'start ai' in query:
-            codePath = "C:\\Users\\"User name"\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Ollama.lnk"
-            if os.path.exists(codePath):
-                os.startfile(codePath)
-                time.sleep(2)
-            codePath = "C:\\Users\\"User name"\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe"
-            if os.path.exists(codePath):
-                os.startfile(codePath)
-                time.sleep(2)
-                pyautogui.write('ollama run llama3.1')
-                time.sleep(2)
-                pyautogui.press('enter')
-                speak("Offline artificial intelligence protocol initiated")
-            else:
-                speak("artificial intelligence not found at the specified path.") 
